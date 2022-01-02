@@ -164,6 +164,7 @@ def user_stats(df):
         print('The earliest birth year is', int(df['Birth Year'].min()))
         print('The most recent birth year is', int(df['Birth Year'].max()))
         print('The most common birth year is', int(df['Birth Year'].mode()[0]))
+        print('The average birth year is', int(df['Birth Year'].mean()))
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
