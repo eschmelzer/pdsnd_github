@@ -2,7 +2,7 @@ Hello. Welcome to the README file for the "bikeshare data project" from Udacity;
 
 Essentially, this project allows the user to recieve statistics about bikeshare usage in 3 cities - New York City, Chicago, and Washington, D.C. - during a sixth-month time period from January through June 2017. Users can recieve statistics for the specified city for some combination of a certain weekday and a certain month, or select "all" for either of these options. Statistics pertain to the most frequent travel times, the most popular bike stations, trip duration, and user demographics. 
 
-For this project there are three data files, one each containing the data for New York City, Chicago, and Washington, D.C. There is also a python file entitled bikeshare.py. The user runs this file via the command line, where their input is taken, and the requested statistics are displayed.
+For this project there are three data files, one each containing the data for New York City, Chicago, and Washington, D.C. There is also a python file entitled bikeshare.py. The user runs this file via the command line, where their input is taken, and the requested statistics are displayed.Users may also view raw data from the data file relative to their selected city.
 
 Please note that I used the following sources outside of the Udacity course itself for ideas of how to complete certain portions of the project:
 
