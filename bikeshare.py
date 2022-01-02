@@ -132,11 +132,11 @@ def trip_duration_stats(df):
     # TO DO: display total travel time
     total_travel_time = sum(df['Trip Duration'])
     #print(('All trips for {day}s in {month} took a combined:',  total_travel_time).format(day,month))
-    print('All trips took a combined', total_travel_time, 'seconds, or', total_travel_time/60, 'minutes.')
+    print('All trips took a combined', total_travel_time, 'seconds, or', total_travel_time/60, 'minutes, or', total_travel_time/60/60, 'hours.')
           
     # TO DO: display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    print('The average trip took', mean_travel_time, 'seconds, or', mean_travel_time/60, 'minutes.')
+    print('The average trip took', mean_travel_time, 'seconds, or', mean_travel_time/60, 'minutes, or', mean_travel_time/60/60, 'hours.')
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -164,6 +164,7 @@ def user_stats(df):
         print('The earliest birth year is', int(df['Birth Year'].min()))
         print('The most recent birth year is', int(df['Birth Year'].max()))
         print('The most common birth year is', int(df['Birth Year'].mode()[0]))
+        print('The average birth year is', int(df['Birth Year'].mean()))
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
