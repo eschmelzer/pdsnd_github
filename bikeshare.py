@@ -153,13 +153,13 @@ def user_stats(df):
 
     # TO DO: Display counts of gender
     if 'Gender' not in df.columns:
-        print('Gender Statistics Unavailable')
+        print('Gender Statistics Unavailable for the Selected City')
     else: 
         print(df['Gender'].value_counts())
 
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' not in df.columns:
-        print('Birth Year/Age Statistics Unavailable')
+        print('Birth Year/Age Statistics Unavailable for the Selected City')
     else: 
         print('The earliest birth year is', int(df['Birth Year'].min()))
         print('The most recent birth year is', int(df['Birth Year'].max()))
